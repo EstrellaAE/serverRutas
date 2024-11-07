@@ -16,12 +16,11 @@ exports.crearRuta = async (req, res) => {
     try {
         const { nombre, descripcion, horario, precio } = req.body;
         
-        // Validaciones simples (puedes agregar más según tus necesidades)
         if (!nombre || !descripcion || !horario || !precio) {
             return res.status(400).json({ msg: 'Todos los campos son obligatorios' });
         }
 
-        // Creamos nuestra ruta
+        // Creamos  ruta
         let ruta = new Ruta(req.body);
 
         await ruta.save();

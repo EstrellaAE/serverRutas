@@ -20,11 +20,11 @@ router.put('/:id', rutaController.editarRuta);
 // Eliminar una ruta por ID
 router.delete('/:id', rutaController.eliminarRuta);
 
-// Activar una ruta por ID
+/*// Activar una ruta por ID
 router.put('/:id', rutaController.activarRuta);
 
 // Desactivar una ruta por ID
-router.put('/:id', rutaController.desactivarRuta);
+router.put('/:id', rutaController.desactivarRuta);*/
 
 
 module.exports = router;
